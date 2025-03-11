@@ -1,8 +1,5 @@
 package esercizio3;
 
-
-import java.util.Scanner;
-
 public class Esercizio3 {
     public static String whileEsempio(String s) {
         int i = 0;
