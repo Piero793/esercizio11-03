@@ -8,6 +8,8 @@ public class TestEsercizio4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        forEsempio(10);
+        System.out.println("inserisci un numero per avviare il decremento");
+        int num = scanner.nextInt();
+        System.out.println("il numero inserito é: " + forEsempio(num));
     }
 }
