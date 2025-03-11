@@ -1,22 +1,20 @@
 package esercizio3;
 
+
 import java.util.Scanner;
 
 public class Esercizio3 {
-        public static String whileEsempio (String s){
-
-            while (!s.equals("q")) {
-                System.out.println(s.split(","));
-                break;
-            }
-            return s;
+    public static String whileEsempio(String s) {
+        int i = 0;
+        while (i < s.length() && s.charAt(i) != 'q') {
+            System.out.print(s.charAt(i) + ",");
+            i++;
         }
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("inserisci una stringa");
-        String s = scanner.nextLine();
-        System.out.println("la stringa inserita è: " + whileEsempio(s));
+        if (i < s.length()) {
+            return s.substring(i);
+        } else {
+            return "";
+        }
     }
+
 }
